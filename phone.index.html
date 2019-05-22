@@ -224,7 +224,7 @@ option = {
         x: '10%',
         x2: 150,
         y: '18%',
-        y2: '10%'
+     
     },
     tooltip: {
         padding: 10,
@@ -279,68 +279,6 @@ option = {
             show: false
         }
     },
-    visualMap: [
-        {
-            left: 'right',
-            top: '10%',
-            dimension: 1,
-            min: 0,
-            max: 200,
-            itemWidth: 30,
-            itemHeight: 120,
-            calculable: true,
-            precision: 0.1,
-            text: ['播放量'],
-            textGap: 30,
-            textStyle: {
-                color: '#fff'
-            },
-            inRange: {
-                symbolSize: [10, 70]
-            },
-            outOfRange: {
-                symbolSize: [10, 70],
-                color: ['rgba(255,255,255,.2)']
-            },
-            controller: {
-                inRange: {
-                    color: ['#c23531']
-                },
-                outOfRange: {
-                    color: ['#444']
-                }
-            }
-        },
-        {
-            left: 'right',
-            bottom: '5%',
-            dimension: 2,
-            min: 0,
-            max: 50,
-            itemHeight: 120,
-            calculable: true,
-            precision: 0.1,
-            text: ['评论量'],
-            textGap: 30,
-            textStyle: {
-                color: '#fff'
-            },
-            inRange: {
-                colorLightness: [1, 0.5]
-            },
-            outOfRange: {
-                color: ['rgba(255,255,255,.2)']
-            },
-            controller: {
-                inRange: {
-                    color: ['#c23531']
-                },
-                outOfRange: {
-                    color: ['#444']
-                }
-            }
-        }
-    ],
     series: [
         {
             name: '腾讯',
@@ -383,7 +321,7 @@ option = {
 </div>
 </div>
     
-    <div id="main5" style="width: 800px;height:400px;left:20%;"></div>
+    <div id="main5" style="width: 400px;height:200px;left:5%;"></div>
      <script type="text/javascript">
         var myChart5 = echarts.init(document.getElementById('main5'));
         var option5 =  {   
@@ -501,11 +439,6 @@ option = {
         trigger: "item",
         formatter: "{a} <br/>{b} : {c} ({d}%)"
     },
-    legend: {
-        orient: "vertical",
-        x: "left",
-        data: ["谈判官", "独孤天下", "流星花园2018", "恋爱先生", "凉生我们可不可以不忧伤"]
-    },
     toolbox: {
         show: true,
         feature: {
@@ -583,7 +516,7 @@ option = {
 	</div>
 </div>
 </div>
-    <div id="main2" style="width: 300px;height:200px;left:8%"></div>
+    <div id="main2" style="width: 300px;height:200px;left:5%"></div>
      <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart2 = echarts.init(document.getElementById('main2'));
@@ -599,11 +532,6 @@ option = {
             }
         },
         showDelay: 505
-    },
-    legend: {
-        orient: "vertical",
-        x: "left",
-        data: ["爱奇艺", "腾讯", "芒果TV", "优酷", "搜狐", "延禧攻略", "香蜜沉沉烬如霜", "芸汐传", "凤囚凰", "老男孩", "如懿传", "扶摇", "香蜜沉沉烬如霜", "独孤天下", "恋爱先生", "流星花园2018", "谈判官", "温暖的弦", "凤囚凰", "颤抖吧阿部之朵星风云", "恋爱先生", "烈火如歌 ", "武动乾坤", "飞虎之潜行极战", "天坑鹰猎", "法医秦明2清道夫", "谈判官", "动物系恋人啊  ", " 无法拥抱的你", "继承者计划 "]
     },
     toolbox: {
         show: true,
