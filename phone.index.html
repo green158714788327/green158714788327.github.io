@@ -417,7 +417,7 @@ option = {
 </div>
       <script src="green158714788327.github.io/echarts.js"></script>
       <script src="green158714788327.github.io/jquery.js"></script>
-    <div id="main1" style="width: 300px;height:200px;left:5%;"></div>
+    <div id="main1" style="width: 400px;height:200px;left:5%;"></div>
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart1 = echarts.init(document.getElementById('main1'));
@@ -510,13 +510,13 @@ option = {
 	</div>
 </div>
 </div>
-    <div id="main2" style="width: 350px;height:200px;left:5%"></div>
+    <div id="main2" style="width: 400px;height:200px;left:5%"></div>
      <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart2 = echarts.init(document.getElementById('main2'));
 
         // 指定图表的配置项和数据
-      var option2 = {
+      var option2 = option = {
     tooltip: {
         trigger: "item",
         formatter: "{a} <br/>{b} : {c} ({d}%)",
@@ -594,7 +594,6 @@ option = {
             ]
         },
       
-        }
     ]
 };
 
