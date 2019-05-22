@@ -135,7 +135,7 @@
     <script src="green158714788327.github.io/echarts.js"></script>
     <script src="green158714788327.github.io/echarts-tooltip-carousel.js"></script>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="main" style="width: 300px;height:200px;left:5%;"></div>
+    <div id="main" style="width: 400px;height:200px;left:5%;"></div>
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main'));
@@ -220,12 +220,7 @@ option = {
             fontSize: 16
         }
     },
-    grid: {
-        x: '10%',
-        x2: 150,
-        y: '18%',
-     
-    },
+ 
     tooltip: {
         padding: 10,
         backgroundColor: '#222',
@@ -263,7 +258,6 @@ option = {
     },
     yAxis: {
         type: 'value',
-        name: '播放量',
         nameLocation: 'end',
         nameGap: 20,
         nameTextStyle: {
@@ -533,6 +527,12 @@ option = {
         },
         showDelay: 505
     },
+	   grid: {
+        x: '10%',
+        x2: 5,
+        y: '18%',
+     
+    },
     toolbox: {
         show: true,
         feature: {
@@ -762,9 +762,7 @@ option = {
             saveAsImage: {show: true}
         }
     },
-    legend: {
-        data:['播放量','粉丝数','集数']
-    },
+ 
     xAxis: [
         {
             type: 'category',
@@ -777,7 +775,7 @@ option = {
     yAxis: [
         {
             type: 'value',
-            name: '播放量(亿）/微博粉丝数(百万）',
+            name: '播放量(亿）/微博粉丝数(m）',
             min: 0,
             max: 200,
             interval: 50,
