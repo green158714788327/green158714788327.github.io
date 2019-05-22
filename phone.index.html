@@ -518,6 +518,10 @@ option = {
         // 指定图表的配置项和数据
       var option2 = option = {
     tooltip: {
+	    title: {
+        text: "播放量top30平台分布",
+        x: "center"
+    },
         trigger: "item",
         formatter: "{a} <br/>{b} : {c} ({d}%)",
         axisPointer: {
@@ -599,9 +603,6 @@ option = {
 
         // 使用刚指定的配置项和数据显示图表。
         myChart2.setOption(option2);
-      myChart2.on('click', function (params) {
-    window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
-});
     </script>
      <div class="container">
 	<div class="row">
